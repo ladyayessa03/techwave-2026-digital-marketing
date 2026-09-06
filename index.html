@@ -3,105 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechWave 2026</title>
+  <title>TechWave 2026 | Build. Connect. Create.</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">TECHWAVE <span>2026</span></div>
+    <a class="brand" href="#home"><span class="brand-mark">TW</span><span>TECHWAVE <b>2026</b></span></a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
     <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#activities">Activities</a>
-      <a href="#events">Events</a>
-      <a href="#login">Login</a>
-      <a href="#signup" class="nav-signup">Sign Up</a>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#activities">Activities</a><a href="#events">Events</a>
+      <a class="login-link" href="#login">Log in</a><a class="signup-link" href="#signup">Sign up</a>
     </div>
   </nav>
 
   <header class="hero" id="home">
-    <div class="tag">COLLEGE OF COMPUTER STUDIES</div>
-    <h1>TECHWAVE <span>2026</span></h1>
-    <p class="big">Build. Connect. Create.</p>
-    <p>A simple tech week where students can learn, join activities, and connect with others.</p>
-    <div class="hero-buttons">
-      <a href="#signup" class="button">SIGN UP</a>
-      <a href="#login" class="button outline">LOGIN</a>
+    <div class="hero-content">
+      <div class="eyebrow"><span></span> COLLEGE OF COMPUTER STUDIES</div>
+      <h1>Where ideas<br><em>become tech.</em></h1>
+      <p>TechWave 2026 is a student-focused technology week built for learning, creating, competing, and connecting.</p>
+      <div class="hero-actions"><a href="#signup" class="primary-btn">Join TechWave <span>→</span></a><a href="#about" class="text-btn">Explore more ↓</a></div>
+      <div class="hero-meta"><div><strong>03</strong><small>Days of events</small></div><div><strong>06+</strong><small>Student activities</small></div><div><strong>01</strong><small>Tech community</small></div></div>
     </div>
+    <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb"><span>01</span><small>CREATE</small></div><div class="code-card"><span>&lt; / &gt;</span><p>build()</p><b>your future_</b></div></div>
   </header>
 
-  <section class="info-section" id="about">
-    <div class="section-inner">
-      <p class="section-label">ABOUT TECHWAVE</p>
-      <h2>What is TechWave 2026?</h2>
-      <p>TechWave 2026 is a student technology week made for computer studies students. It gives students a chance to explore technology, join fun activities, share ideas, and meet other students who are interested in computers and digital innovation.</p>
+  <section class="about" id="about">
+    <div class="section-label">01 — ABOUT</div>
+    <div class="about-grid"><h2>More than an event.<br><span>A space to create.</span></h2><div><p>TechWave 2026 brings computer studies students together to discover new ideas, improve their skills, and experience technology beyond the classroom.</p><p>From coding challenges to design contests and showcases, every activity is designed to make learning more engaging and collaborative.</p></div></div>
+  </section>
+
+  <section class="activities" id="activities">
+    <div class="section-head"><div><div class="section-label">02 — ACTIVITIES</div><h2>Pick your challenge.</h2></div><p>Learn something new, compete with friends, and show what you can build.</p></div>
+    <div class="activity-grid">
+      <article class="activity featured"><div class="activity-top"><span>01</span><span>CODING</span></div><div class="icon">&lt;/&gt;</div><h3>Code Challenge</h3><p>Put your programming skills to the test and solve practical problems.</p><a href="#signup">Join activity →</a></article>
+      <article class="activity"><div class="activity-top"><span>02</span><span>DESIGN</span></div><div class="icon">✦</div><h3>UI Design Contest</h3><p>Turn an idea into a clean and creative digital interface.</p><a href="#signup">Join activity →</a></article>
+      <article class="activity"><div class="activity-top"><span>03</span><span>QUIZ</span></div><div class="icon">?</div><h3>Tech Quiz</h3><p>Challenge your knowledge of computers, programming, and technology.</p><a href="#signup">Join activity →</a></article>
     </div>
   </section>
 
-  <section class="cards-section" id="activities">
-    <div class="section-inner">
-      <p class="section-label">ACTIVITIES</p>
-      <h2>Join the Activities</h2>
-      <div class="cards">
-        <article class="card"><div class="card-number">01</div><h3>Code Challenge</h3><p>Test your programming skills through a simple coding challenge.</p><span>Open to Students</span></article>
-        <article class="card"><div class="card-number">02</div><h3>UI Design Contest</h3><p>Create a clean and creative interface based on a given theme.</p><span>Open to Students</span></article>
-        <article class="card"><div class="card-number">03</div><h3>Tech Quiz</h3><p>Answer questions about computers, programming, and technology.</p><span>Team Activity</span></article>
-      </div>
+  <section class="events" id="events">
+    <div class="section-label">03 — EVENTS</div><h2>What's happening.</h2>
+    <div class="timeline">
+      <div class="event"><div class="event-day">DAY 01</div><div class="event-main"><h3>Opening Program</h3><p>Welcome to TechWave 2026. Meet the community and get introduced to the week's activities.</p></div><span class="event-arrow">↗</span></div>
+      <div class="event"><div class="event-day">DAY 02</div><div class="event-main"><h3>Competition Day</h3><p>Code Challenge, UI Design Contest, and Tech Quiz take center stage.</p></div><span class="event-arrow">↗</span></div>
+      <div class="event"><div class="event-day">DAY 03</div><div class="event-main"><h3>Tech Showcase</h3><p>Students present projects, ideas, and creative technology solutions.</p></div><span class="event-arrow">↗</span></div>
     </div>
   </section>
 
-  <section class="info-section events-section" id="events">
-    <div class="section-inner">
-      <p class="section-label">EVENTS</p>
-      <h2>What's Happening?</h2>
-      <div class="event-list">
-        <div class="event"><div class="date">DAY 01</div><div><h3>Opening Program</h3><p>Welcome program and introduction to TechWave 2026.</p></div></div>
-        <div class="event"><div class="date">DAY 02</div><div><h3>Competition Day</h3><p>Code Challenge, UI Design Contest, and Tech Quiz.</p></div></div>
-        <div class="event"><div class="date">DAY 03</div><div><h3>Tech Showcase</h3><p>Students present their projects and creative technology ideas.</p></div></div>
-      </div>
-    </div>
+  <section class="auth" id="login">
+    <div class="auth-copy"><div class="section-label">04 — MEMBER ACCESS</div><h2>Ready to be<br><span>part of it?</span></h2><p>Log in to continue or create an account to join TechWave activities and events.</p></div>
+    <div class="auth-card"><h3>Welcome back</h3><p>Log in to your TechWave account.</p><form onsubmit="event.preventDefault();alert('Login demo only.');"><label>Email<input type="email" placeholder="you@example.com" required></label><label>Password<input type="password" placeholder="Enter your password" required></label><button type="submit" class="primary-btn full">Log in <span>→</span></button></form><p class="form-note">No account? <a href="#signup">Create one</a></p></div>
   </section>
 
-  <section class="auth-section" id="login">
-    <div class="auth-box">
-      <p class="section-label">WELCOME BACK</p>
-      <h2>Login</h2>
-      <form onsubmit="event.preventDefault(); alert('Login demo only.');">
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button class="button" type="submit">LOGIN</button>
-      </form>
-      <p class="switch">Don't have an account? <a href="#signup">Sign up</a></p>
-    </div>
-  </section>
+  <section class="signup" id="signup"><div class="signup-card"><div class="section-label">JOIN THE WAVE</div><h2>Create your account.</h2><p>Sign up and be part of TechWave 2026.</p><form onsubmit="event.preventDefault();alert('Sign up demo only.');"><div class="form-row"><label>Full name<input type="text" placeholder="Your name" required></label><label>Email<input type="email" placeholder="you@example.com" required></label></div><label>Password<input type="password" placeholder="Create a password" required></label><button type="submit" class="primary-btn">Create account <span>→</span></button></form></div></section>
 
-  <section class="auth-section signup-bg" id="signup">
-    <div class="auth-box">
-      <p class="section-label">JOIN TECHWAVE</p>
-      <h2>Create an Account</h2>
-      <form onsubmit="event.preventDefault(); alert('Sign up demo only.');">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button class="button" type="submit">SIGN UP</button>
-      </form>
-      <p class="switch">Already have an account? <a href="#login">Login</a></p>
-    </div>
-  </section>
+  <section class="materials"><div class="section-label">05 — CAMPAIGN MATERIALS</div><h2>TechWave in every format.</h2><div class="materials-grid"><img src="assets/social-media.svg" alt="Social media post"><img src="assets/landing-banner.svg" alt="Landing banner"><img src="assets/newsletter-header.svg" alt="Newsletter header"><img src="assets/banner-ad.svg" alt="Banner ad"></div></section>
 
-  <section class="graphics-section" id="graphics">
-    <div class="section-inner">
-      <p class="section-label">DIGITAL MATERIALS</p>
-      <h2>TechWave Campaign Graphics</h2>
-      <div class="grid">
-        <article><img src="assets/social-media.svg" alt="TechWave social media post"><h3>Social Media Post</h3><p>1080 × 1080</p></article>
-        <article><img src="assets/landing-banner.svg" alt="TechWave landing page banner"><h3>Landing Page Banner</h3><p>1600 × 900</p></article>
-        <article><img src="assets/newsletter-header.svg" alt="TechWave newsletter header"><h3>Newsletter Header</h3><p>600 × 200</p></article>
-        <article><img src="assets/banner-ad.svg" alt="TechWave banner ad"><h3>Banner Ad</h3><p>336 × 280</p></article>
-      </div>
-    </div>
-  </section>
-
-  <footer>TechWave 2026 • College of Computer Studies • Build. Connect. Create.</footer>
+  <footer><div class="footer-brand">TECHWAVE <span>2026</span></div><p>Build. Connect. Create.</p><small>© 2026 College of Computer Studies</small></footer>
 </body>
 </html>
